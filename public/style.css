@@ -1,0 +1,33 @@
+body {
+    margin-right: 4%;
+    background-color: #000000;
+    color: #fffff3;
+}
+#qtitle {
+    text-align: center;
+    margin-bottom: 2%;
+    
+        
+}
+#monlist {
+    float: right;
+}
+#q {
+    margin-top: 1%;
+    margin-right: 8%;
+    margin-bottom: 1%;
+}
+#q, #o1, #o3 {
+    margin-left: 8%
+}
+#o2, #o4 {
+    margin-left: 60%
+}
+#ansmess {
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+#ll {
+    margin-bottom: 4%;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Quiz Game</title>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="script.js"></script>
+        <style>
+            .mon {
+                padding:0.4em;
+            }
+            body {
+                background-color: black;
+                color: #00ccff;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container-fluid row" style="margin-left:4%;margin-right:4%;margin-top:1%">
+            <div id="qtitle" class="page-header text-center" style="font-family:'Lucida Console';font-size:200%;margin-botton:1%">Placeholder title</div>
+            
+            <div class="col-sm-10">
+            <div class="panel-group">
+            <div class="panel panel-info" style="background-color:#00004d;">
+                <div id="q" style="margin-bottom:2%;font-family:'Courier New';font-size:200%    " class="panel-heading" style="margin-bottom:0">Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question. Placeholder Question.</div>
+                <div id="opt" class="panel-body" >
+                    <div class="row" style="margin-bottom:2%">
+                        <span class="col-sm-1">A:</span>
+                        <span id="o1" data-value="1" class="btn btn-default btn-sm col-sm-3">Option 1</span>
+                        <span class="col-sm-1"></span>
+                        <span class="col-sm-1">B:</span>
+                        <span id="o2" data-value="2" class="btn btn-default btn-sm col-sm-3">Option  2</span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-1">C:</span>
+                        <span id="o3" data-value="3" class="btn btn-default btn-sm col-sm-3">Option 3</span>
+                        <span class="col-sm-1"></span>
+                        <span class="col-sm-1">D:</span>
+                        <span id="o4" data-value="4" class="btn btn-default btn-sm col-sm-3">Option 4</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <div id="ansmess">Placeholder answer declaration</div>
+                <div id="ll" class="btn-group" style="margin-top:3%;margin-bottom:2%font-family:'Lucida Console';font-size:120%">Available Lifelines:<br> 
+                    <span id="ap" class="btn btn-primary" style="margin-top:1%">Audience Poll</span>
+                    <span id="ff" class="btn btn-primary" style="margin-top:1%">Fifty-Fifty</span>
+                    <span id="fl" class="btn btn-primary" style="margin-top:1%">Flip the question</span>
+                    <span id="quit" class="btn btn-primary" style="margin-top:1%">Quit the game</span>
+                    <span id="pp" class="btn btn-primary" style="margin-top:1%">Power Paplu</span>
+                    <span id="dd" class="btn btn-primary" style="margin-top:1%">Double Dip</span>
+                </div>
+                <div id="apr">Audience poll results:
+                    <div id="ao1">Option A</div>
+                    <div id="ao2">Option B</div>
+                    <div id="ao3">Option C</div>
+                    <div id="ao4">Option D</div>
+                </div>
+            </div>
+            <div id="monlist" class="col-sm-2   list-group">
+                <div id="p15" data-value="7 crores" data-num="70000000" class=" list-group-item mon mon">&#8377;7 crores</div>
+                <div id="p14" data-value="5 crores" data-num="50000000" class="list-group-item mon">&#8377;5 crores</div>
+                <div id="p13" data-value="2 crores" data-num="20000000" class="list-group-item mon">&#8377;2 crores</div>
+                <div id="p12" data-value="1 crore" data-num="10000000" class="list-group-item mon">&#8377;1 crore</div>
+                <div id="p11" data-value="50,00,000" data-num="5000000" class="list-group-item mon">&#8377;50,00,000</div>
+                <div id="p10" data-value="25,00,000" data-num="2500000" class="list-group-item mon">&#8377;25,00,000</div>
+                <div id="p9" data-value="12,50,000" data-num="1250000" class="list-group-item mon">&#8377;12,50,000</div>
+                <div id="p8" data-value="6,40,000" data-num="640000" data-iscp="true" class="list-group-item mon">&#8377;6,40,000</div>
+                <div id="p7" data-value="3,20,000" data-num="320000" class="list-group-item mon">&#8377;3,20,000</div>
+                <div id="p6" data-value="1,60,000" data-num="160000" class="list-group-item mon">&#8377;1,60,000</div>
+                <div id="p5" data-value="80,000" data-num="80000" class="list-group-item mon">&#8377;80,000</div>
+                <div id="p4" data-value="40,000" data-num="40000" data-iscp="true" class="list-group-item mon">&#8377;40,000</div>
+                <div id="p3" data-value="20,000" data-num="20000" class="list-group-item mon">&#8377;20,000</div>
+                <div id="p2" data-value="10,000" data-num="10000" class="list-group-item mon">&#8377;10,000</div>
+                <div id="p1" data-value="5000" data-num="5000" class="list-group-item mon">&#8377;5,000</div>
+            </div>
+        </div>
+     
+       
+    </body>
+</html>
