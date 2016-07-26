@@ -9,13 +9,14 @@ $(document).ready(function(){
         xhttp.open("GET","leaderboard/"+Math.random(),true);
         console.log("sending");
         xhttp.send(); */
-        var name,score;
+        var name,score,timestamp;
         $.get("leaderboard/",function(data){
             console.log(data);
             for(var i=0;i<data.length;i++){
                 name=data[i].name;
                 score=data[i].score;
-                $("#div1").append("<tr><td>"+(i+1)+"</td><td>"+name+"</td><td>"+score+"</td><tr>");
+                timestamp=data[i].timestamp;
+                $("#div1").append("<tr><td>"+(i+1)+"</td><td>"+name+"</td><td>"+score+"</td><td>"+timestamp+"</td></tr>");
             }
            // var strdata=JSON.stringify(data[0].attr("name"));
         //    $("#div1").html(strdata);

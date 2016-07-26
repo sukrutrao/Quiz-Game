@@ -1,21 +1,46 @@
 $(document).ready(function(){
-    
+
     fiftyf=1,ff2=1, audiencep=1,ap2=1, flipq=1,fq2=1, doubled=1,dd2=1, powerp=0,pp2=0; var quit=1;
     var currentq=1, currentp=0;
     var questionarray, username;
     var isans=0,chosenans=0;
     var isclicked=1;
     var questionnumber;
-    
+
     $.get("data.json", function(data){
-        
+
         questionarray = data;
         init();
-        
+
     });
-  
+
+    function getDateTime() {
+
+    var date = new Date();
+
+    var hour = date.getHours();
+    hour = (hour < 10 ? "0" : "") + hour;
+
+    var min  = date.getMinutes();
+    min = (min < 10 ? "0" : "") + min;
+
+    var sec  = date.getSeconds();
+    sec = (sec < 10 ? "0" : "") + sec;
+
+    var year = date.getFullYear();
+
+    var month = date.getMonth() + 1;
+    month = (month < 10 ? "0" : "") + month;
+
+    var day  = date.getDate();
+    day = (day < 10 ? "0" : "") + day;
+
+    return day + "-" + month + "-" + year + "   " + hour + ":" + min + ":" + sec;
+
+}
+
     function init(){
-        
+
         fiftyf=1;
         audiencep=1;
         flipq=1;
@@ -31,12 +56,12 @@ $(document).ready(function(){
         play();
     }
     function display(){
-        
+
         $("body").css("visibility", "visible");
         if(currentq!=0){
             $("#qtitle").css("visibility", "visible");
             $("#q").css("visibility", "visible");
-            
+
         }
         else{
             $("#q").css("visibility","hidden");
@@ -50,7 +75,7 @@ $(document).ready(function(){
                 $("#p" + i).css("color", "green").css("visibility", "visible");
             }
             else {
-                
+
                 $("#p" + i).css("color", "yellow").css("visibility", "visible");
             }
         }
@@ -110,7 +135,7 @@ $(document).ready(function(){
                 {
                     $("#o" + i).css("color", "#000000").css("visibility", "visible");
                 }
-                
+
             }
         }
         $("#ansmess").css("visibility","hidden");
@@ -118,7 +143,7 @@ $(document).ready(function(){
     }
     function play(){
         if(currentq<16){
-            
+
             isclicked=0;
             if(ff2==0){
                 questionnumber=(currentq-1)*10+Math.floor(Math.random()*5)+5;
@@ -135,7 +160,7 @@ $(document).ready(function(){
             for(var i=1;i<=4;i++){
                 $("#o" + i).html(questionarray[questionnumber-1]["o" + i]);
             }
-            $("#qtitle").html("Question No.: "+currentq);   
+            $("#qtitle").html("Question No.: "+currentq);
         }
         else{
             displaymessage("win");
@@ -203,16 +228,16 @@ $(document).ready(function(){
             }
             $("#ansmess").html("You won &#8377;"+moneywon+"!\nThank you for playing!");
             $("#ansmess").css("color","yellow").css("visibility","visible");
-            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":sendmoneytoserver });
+            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() });
         }
         else if(data=="win"){
             currentq=0;
             display();
             $("#ll, #ll > span").css("visibility","hidden");
-            $("#monlist, #monlist > div").css("visibility","hidden"); 
+            $("#monlist, #monlist > div").css("visibility","hidden");
             $("#ansmess").html("Congratulations! You have won &#8377; 7 crores! You win the game!");
             $("#ansmess").css("color","green").css("visibility","visible");
-            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000" });
+            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000", "timestamp":getDateTime() });
         }
         else if(data=="flipc"){
             $("#ansmess").html("That would have been the correct answer!").css("color","green").css("visibility","visible");
@@ -257,11 +282,11 @@ $(document).ready(function(){
                     currentq=0;
                     display();
                     $("#ll, #ll > span").css("visibility","hidden");
-                    
+
                     $("#monlist, #monlist > div").css("visibility","hidden");
                     currentq=temp;
                     displaymessage("result");
-                   
+
                 },2000);
             }
         }
@@ -276,12 +301,12 @@ $(document).ready(function(){
               displaymessage("flipc");
             },1000);
             setTimeout(function(){
-                
+
                 isans=0;
                 display();
                 play();
             },2000);
-            
+
         }
         else if(fl2==0 && isclicked==0){
             isclicked=1;
@@ -296,7 +321,7 @@ $(document).ready(function(){
                displaymessage("flipw");
             },1000);
             setTimeout(function(){
-                
+
                 isans=0;
                 display();
                 play();
@@ -318,7 +343,7 @@ $(document).ready(function(){
                     currentq=0;
                     display();
                     $("#ll, #ll > span").css("visibility","hidden");
-                    
+
                     $("#monlist, #monlist > div").css("visibility","hidden");
                     currentq=temp;
                     displaymessage("result");
@@ -326,7 +351,7 @@ $(document).ready(function(){
             }
             else{
                  var currans=$("#o"+questionarray[questionnumber-1]["ca"].toString());
-                setTimeout(function(){  
+                setTimeout(function(){
                     currop.css("color","red");
                     currans.css("color","green");
                     displaymessage("flipw");
@@ -336,12 +361,12 @@ $(document).ready(function(){
                     currentq=0;
                     display();
                     $("#ll, #ll > span").css("visibility","hidden");
-                    
+
                     $("#monlist, #monlist > div").css("visibility","hidden");
                     currentq=temp;
                     displaymessage("result");
-                },2000);                      
- 
+                },2000);
+
             }
         }
     });
