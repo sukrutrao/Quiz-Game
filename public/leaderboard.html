@@ -7,28 +7,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="leaderscript.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Syncopate:400,700" rel="stylesheet">
         <style>
           body{
             background-color: black;
             color: indigo;
           }
+          #table{
+            font-family: 'Droid Serif', serif;
+          }
+          #leaderboardtitle{
+            font-family: 'Syncopate', sans-serif;
+            font-size: 200%;
+            color: #003300;
+            background-color: #d966ff;
+          }
         </style>
     </head>
     <body>
-      <div class="container" >
-        <div id="leaderboardtitle" class="jumbotron well" style="font-size:2.5em font-weight: bold">Leaderboard</div>
-        <table class="table table-responsive" style="background-color: lightseagreen">
-          <thread>
-            <tr class="info">
-              <th>Sr. No.</th>
-              <th>Name</th>
-              <th>Score</th>
-              <th>Time</th>
-            </tr>
-          </thread>
-          <tbody id="div1">
-          </tbody>
-        </table>
+      <div class="container" style="margin-left:4%;margin-right:4%;margin-top:2%" >
+        <div id="leaderboardtitle" class="jumbotron well text-center lead text-uppercase" style="font-weight: bold">High Scores</div>
+        <div class="panel panel-default" id="enclosetable">
+          <table class="table table-responsive" style="background-color: lightseagreen" id="table">
+            <thead>
+              <tr class="info">
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="div1">
+            </tbody>
+          </table>
+        </div>
       </div>
     </body>
 </html>
