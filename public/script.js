@@ -51,7 +51,7 @@ $(document).ready(function(){
         currentp=0;
         isans=0;
         $("body").css("visibility", "hidden");
-        username = prompt("Enter your name:\n", "user");
+      //  username = prompt("Enter your name:\n", "user");
         display();
         play();
     }
@@ -80,41 +80,41 @@ $(document).ready(function(){
             }
         }
         if(fiftyf==1){
-            $("#ff").css("visibility", "visible");
+            $("#ff").prop('disabled', false);
         }
         else
         {
-            $("#ff").css("visibility", "hidden");
+            $("#ff").prop('disabled', true);
         }
         if(audiencep==1){
-            $("#ap").css("visibility", "visible");
+            $("#ap").prop('disabled', false);
         }
         else
         {
-            $("#ap").css("visibility", "hidden");
+            $("#ap").prop('disabled', true);
         }
-        if(doubled==1){
+    /*    if(doubled==1){
             $("#dd").css("visibility", "visible");
         }
         else
         {
             $("#dd").css("visibility", "hidden");
-        }
+        }*/
         if(flipq==1){
-            $("#fl").css("visibility", "visible");
+            $("#fl").prop('disabled', false);
         }
         else
         {
-            $("#fl").css("visibility", "hidden");
+            $("#fl").prop('disabled', true);
         }
-        if(powerp==1){
+  /*      if(powerp==1){
             $("#pp").css("visibility", "visible");
         }
         else
         {
             $("#pp").css("visibility", "hidden");
-        }
-        $("#quit").css("visibility", "visible");
+        }*/
+        $("#quit").prop('disabled', false);
         if(currentq==0){
             for(var i=1;i<=4;i++){
                     $("#o" + i).css("visibility", "hidden");
