@@ -201,7 +201,7 @@ $(document).ready(function(){
         }
         else if(data=="incorrect"){
             $("#ansmess").html("That is the incorrect answer!\n");
-            $("#ansmess").css("color","red").css("visibility","visible");
+            $("#ansmess").css("color","red").addClass("alert alert-danger").css("visibility","visible");
         }
         else if(data=="result"){
             if(quit==0 && currentq>1){
@@ -226,27 +226,27 @@ $(document).ready(function(){
                 moneywon=$("#p8").attr("data-value");
                 sendmoneytoserver=$("#p4").attr("data-num");
             }
-            $("#ansmess").html("You won &#8377;"+moneywon+"!\nThank you for playing!");
-            $("#ansmess").css("color","yellow").css("visibility","visible");
+        /*    $("#ansmess").html("You won &#8377;"+moneywon+"!\nThank you for playing!");
+            $("#ansmess").css("color","yellow").addClass("alert alert-success").css("visibility","visible");*/
             $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() });
         }
         else if(data=="win"){
             currentq=0;
             display();
-            $("#ll, #ll > span").css("visibility","hidden");
-            $("#monlist, #monlist > div").css("visibility","hidden");
+          /*  $("#ll, #ll > span").css("visibility","hidden");
+            $("#monlist, #monlist > div").css("visibility","hidden");*/
             $("#ansmess").html("Congratulations! You have won &#8377; 7 crores! You win the game!");
-            $("#ansmess").css("color","green").css("visibility","visible");
+            $("#ansmess").css("color","green").addClass("alert alert-success").css("visibility","visible");
             $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000", "timestamp":getDateTime() });
         }
         else if(data=="flipc"){
-            $("#ansmess").html("That would have been the correct answer!").css("color","green").css("visibility","visible");
+            $("#ansmess").html("That would have been the correct answer!").css("color","green").addClass("alert alert-success").css("visibility","visible");
         }
         else if(data=="flipw"){
-            $("#ansmess").html("That would have been the incorrect answer!").css("color","red").css("visibility","visible");
+            $("#ansmess").html("That would have been the incorrect answer!").css("color","red").addClass("alert alert-danger").css("visibility","visible");
         }
         else if(data=="enterguess"){
-            $("#ansmess").html("Please guess an answer").css("color","yellow").css("visibility","visible");
+            $("#ansmess").html("Please guess an answer").css("color","yellow").addClass("alert alert-info").css("visibility","visible");
         }
     }
     $("#o1,#o2,#o3,#o4").click(function(){
@@ -281,9 +281,9 @@ $(document).ready(function(){
                     var temp=currentq;
                     currentq=0;
                     display();
-                    $("#ll, #ll > span").css("visibility","hidden");
+                  /*  $("#ll, #ll > span").css("visibility","hidden");
 
-                    $("#monlist, #monlist > div").css("visibility","hidden");
+                    $("#monlist, #monlist > div").css("visibility","hidden");*/
                     currentq=temp;
                     displaymessage("result");
 
@@ -342,9 +342,9 @@ $(document).ready(function(){
                     var temp=currentq;
                     currentq=0;
                     display();
-                    $("#ll, #ll > span").css("visibility","hidden");
+                /*    $("#ll, #ll > span").css("visibility","hidden");
 
-                    $("#monlist, #monlist > div").css("visibility","hidden");
+                    $("#monlist, #monlist > div").css("visibility","hidden");*/
                     currentq=temp;
                     displaymessage("result");
                 },2000);
@@ -360,9 +360,9 @@ $(document).ready(function(){
                     var temp=currentq;
                     currentq=0;
                     display();
-                    $("#ll, #ll > span").css("visibility","hidden");
+                /*    $("#ll, #ll > span").css("visibility","hidden");
 
-                    $("#monlist, #monlist > div").css("visibility","hidden");
+                    $("#monlist, #monlist > div").css("visibility","hidden");*/
                     currentq=temp;
                     displaymessage("result");
                 },2000);
