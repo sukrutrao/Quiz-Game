@@ -238,9 +238,12 @@ $(document).ready(function(){
             display();
           /*  $("#ll, #ll > span").css("visibility","hidden");
             $("#monlist, #monlist > div").css("visibility","hidden");*/
-            $("#ansmess").html("Congratulations! You have won &#8377; 7 crores! You win the game!");
+      /*      $("#ansmess").html("Congratulations! You have won &#8377; 7 crores! You win the game!");
             $("#ansmess").css("color","green").addClass("alert alert-success").css("visibility","visible");
-            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000", "timestamp":getDateTime() });
+            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000", "timestamp":getDateTime() });*/
+            var resultObj={ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() };
+            sessionStorage.value=JSON.stringify(resultObj);
+            location.href="result.html";
         }
         else if(data=="flipc"){
             $("#ansmess").html("That would have been the correct answer!").css("color","green").addClass("alert alert-success").css("visibility","visible");
@@ -283,7 +286,7 @@ $(document).ready(function(){
                 setTimeout(function(){
                     var temp=currentq;
                     currentq=0;
-                    display();
+                  //  display();
                   /*  $("#ll, #ll > span").css("visibility","hidden");
 
                     $("#monlist, #monlist > div").css("visibility","hidden");*/
@@ -344,7 +347,7 @@ $(document).ready(function(){
                 setTimeout(function(){
                     var temp=currentq;
                     currentq=0;
-                    display();
+              //      display();
                 /*    $("#ll, #ll > span").css("visibility","hidden");
 
                     $("#monlist, #monlist > div").css("visibility","hidden");*/
@@ -362,7 +365,7 @@ $(document).ready(function(){
                 setTimeout(function(){
                     var temp=currentq;
                     currentq=0;
-                    display();
+              //      display();
                 /*    $("#ll, #ll > span").css("visibility","hidden");
 
                     $("#monlist, #monlist > div").css("visibility","hidden");*/
