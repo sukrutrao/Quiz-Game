@@ -26,6 +26,27 @@
         </style>
     </head>
     <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Quiz Game</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navigationbar">
+            <ul class="nav navbar-nav">
+              <li><a href="playgame.html">Play</a></li>
+              <li class="active"><a href="leaderboard.html">High Scores</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login  </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="container" style="margin-left:4%;margin-right:4%;margin-top:2%" >
         <div id="leaderboardtitle" class="jumbotron well text-center lead text-uppercase" style="font-weight: bold">High Scores</div>
         <div class="panel panel-default" id="enclosetable">

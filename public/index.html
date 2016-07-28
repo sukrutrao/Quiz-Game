@@ -41,13 +41,19 @@
             border: 8px solid #ffff00;
           }
           #top{
-            height: 10%;
+            height: 40%;
             position: relative;
           }
+          #playbutton{
+            color: #660066;
+            font-size: 60%;
+            font-family: 'Lato', sans-serif;
+          }
+
         </style>
     </head>
     <body>
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
@@ -70,7 +76,10 @@
       </nav>
       <div id="enclosebuttons">
         <div id="top">&nbsp;</div>
-        <div id="nameandoptions">Quiz Game</div>
+        <div id="nameandoptions">
+          <div>Quiz Game</div>
+          <div class="btn btn-info text-uppercase" id="playbutton">Play</div>
+        </div>
 
       </div>
       <!--  <div><h1>Quiz Game</h1></div>
