@@ -8,14 +8,41 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="firstpagescript.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
         <style>
           body{
             background-image: url(/Images/bluebackground.jpg);
           }
+          #enclosebuttons{
+            height: 40vh;
+            line-height: 32vh;
+            position: relative;
+          }
           #nameandoptions{
-          position: fixed;
-          top: 50%;
-          left: 50%;
+            font-size: 600%;
+            text-align: center;
+            position: relative;
+            height: 80%;
+            width: 40%;
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+
+            color: #ffff00;
+
+
+          }
+          #nameandoptions:after {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            border: 8px solid #ffff00;
+          }
+          #top{
+            height: 10%;
+            position: relative;
           }
         </style>
     </head>
@@ -41,7 +68,11 @@
           </div>
         </div>
       </nav>
-      <div id="nameandoptions">ABC</div>
+      <div id="enclosebuttons">
+        <div id="top">&nbsp;</div>
+        <div id="nameandoptions">Quiz Game</div>
+
+      </div>
       <!--  <div><h1>Quiz Game</h1></div>
         <div id="playgame" class="btn btn-default btn-sm ">Play Game</div>
         <div id="leaderboard" class="btn btn-default btn-sm ">Leaderboard</div>-->
