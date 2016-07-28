@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Quiz Game</title>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="result.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+        <style>
+          body{
+            background-image: url(/Images/bluebackground.jpg);
+          }
+          #enclosebuttons{
+            height: 20vh;
+            line-height: 16vh;
+            position: relative;
+          }
+          #nameandoptions{
+            font-size: 100%;
+            text-align: center;
+            position: relative;
+            height: 80%;
+            width: 40%;
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+
+            color: #ffff00;
+
+
+          }
+          #nameandoptions:after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 4px solid #ffff00;
+          }
+          #gap1{
+            padding-top:100px;
+          }
+          #top{
+            height: 60%;
+            position: relative;
+          }
+          #playbutton{
+            color: #660066;
+            font-size: 60%;
+            font-family: 'Lato', sans-serif;
+          }
+          #namefield{
+            width: 20%;
+
+            margin: 0 auto;
+
+          }
+          #submitbutton{
+
+
+            margin: 0 auto;
+
+            position: relative;
+
+          }
+          #dontsubmitbutton{
+            margin: 0 auto;
+            position: relative;
+            
+
+          }
+          #instruct{
+            font-size: 120%;
+            text-align: center;
+            position: relative;
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+            color: #ffff00;
+          }
+
+        </style>
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Quiz Game</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navigationbar">
+            <ul class="nav navbar-nav">
+              <li><a href="playgame.html">Play</a></li>
+              <li><a href="leaderboard.html">High Scores</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login  </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="enclosebuttons">
+        <div id="top">&nbsp;</div>
+        <div id="nameandoptions">
+          <div id="message"></div>
+
+        </div>
+      </div>
+      <div id="gap1"></div>
+      <div id="instruct">Submit score to leaderboard</div>
+      <div id="gap2" style="padding-top: 10px"></div>
+      <form role="form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="namefield" placeholder="Your Name">
+        </div>
+      </form>
+      <div>
+        <div class="btn btn-info text-uppercase" id="submitbutton">Submit</div>
+        <div class="btn btn-info text-uppercase" id="dontsubmitbutton">Don't submit</div>
+      </div>
+
+      <!--  <div><h1>Quiz Game</h1></div>
+        <div id="playgame" class="btn btn-default btn-sm ">Play Game</div>
+        <div id="leaderboard" class="btn btn-default btn-sm ">Leaderboard</div>-->
+    </body>
+</html>

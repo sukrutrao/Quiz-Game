@@ -228,7 +228,10 @@ $(document).ready(function(){
             }
         /*    $("#ansmess").html("You won &#8377;"+moneywon+"!\nThank you for playing!");
             $("#ansmess").css("color","yellow").addClass("alert alert-success").css("visibility","visible");*/
-            $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() });
+            var resultObj={ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() };
+            sessionStorage.value=JSON.stringify(resultObj);
+            location.href="result.html";
+      //      $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() });
         }
         else if(data=="win"){
             currentq=0;
