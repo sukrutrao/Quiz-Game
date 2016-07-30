@@ -63,254 +63,196 @@
     "ca":4
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
+    "question":"Which Gupta ruler was known as the 'Napolean of India'?",
+    "o1":"Chandragupta - I",
+    "o2":"Chandragupta - II",
+    "o3":"Samundragupta",
+    "o4":"Skandagupta",
+    "ca":3
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+     "question":"Who was the first woman chief minister of Uttar Pradesh?",
+    "o1":"Nandini Satpathy",
+    "o2":"Sucheta Kripalini",
+    "o3":"Rajinder Kaur Bhattal",
+    "o4":"Shashikala Kakodkar",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Which dictator's original name was Alois Schicklgruber?",
+    "o1":"Joseph Stalin",
+    "o2":"Otto von Bismarck",
+    "o3":"Benito Mussolini",
+    "o4":"Adolf Hitler",
+    "ca":4
+},
+{
+     "question":"Which Sikh Guru introduced the new script 'Gurumukhi'?",
+    "o1":"Guru Angad",
+    "o2":"Guru Nanak",
+    "o3":"Guru Arjan",
+    "o4":"Guru Tegh Bahadur",
     "ca":1
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Which war ended with the signing of the Treaty of Vereeniging in May 1902?",
+    "o1":"Boer war",
+    "o2":"Anglo-Aro war",
+    "o3":"Anglo-Zanzibar war",
+    "o4":"Te Kooti's war",
+    "ca":1
+},
+{
+     "question":"Which river is also known as the Narayani?",
+    "o1":"Ganga",
+    "o2":"Beas",
+    "o3":"Kosi",
+    "o4":"Gandak",
+    "ca":4
+},
+{
+    "question":"What is the main language spoken in Cuba?",
+    "o1":"Paraguayan Guaranf",
+    "o2":"Spanish",
+    "o3":"Portuguese",
+    "o4":"Italian",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
+     "question":"Which is the largest land-locked country in the world?",
+    "o1":"Zaire",
+    "o2":"Kryzgystan",
+    "o3":"Kazakhstan",
+    "o4":"Mongolia",
+    "ca":3
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Jaigaon is an Indian border town adjoining which neighbouring country?",
+    "o1":"Nepal",
+    "o2":"Bhutan",
+    "o3":"China",
+    "o4":"Pakistan",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+     "question":"Of the Earth's ten highest peaks, how many border Nepal?",
+    "o1":"1",
+    "o2":"3",
+    "o3":"6",
+    "o4":"8",
+    "ca":4
+},
+{
+     "question":"The Australian Stock Exchange (ASX) is based in which city?",
+    "o1":"Sydney",
+    "o2":"Melbourne",
+    "o3":"Canberra",
+    "o4":"Brisbane",
     "ca":1
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Which company created the first hydro-electric power plant in India?",
+    "o1":"Tata Power",
+    "o2":"National Thermal Power Corporation",
+    "o3":"Hindalco Industries Limited",
+    "o4":"GE",
+    "ca":4
+},
+{
+     "question":"Xu and Dong are the currrency of which Asian country?",
+    "o1":"Vietnam",
+    "o2":"Laos",
+    "o3":"Taiwan",
+    "o4":"Maldives",
+    "ca":1
+},
+{
+    "question":"Whose portrait is printed on a US$100 bill?",
+    "o1":"Abraham Lincoln",
+    "o2":"Andrew Jackson",
+    "o3":"Benjamin Franklin",
+    "o4":"Grover Cleveland",
+    "ca":3
+},
+{
+     "question":"When did the Vatican accept Galileo's ideas?",
+    "o1":"1854",
+    "o2":"1992",
+    "o3":"1938",
+    "o4":"1803",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Which animal is also called the morse?",
+    "o1":"Walrus",
+    "o2":"Sea lion",
+    "o3":"Seal",
+    "o4":"Polar bear",
     "ca":1
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+     "question":"Which creature can turn its stomach inside out?",
+    "o1":"Octopus",
+    "o2":"Jellyfish",
+    "o3":"Starfish",
+    "o4":"Oyster",
+    "ca":3
+},
+{
+    "question":"Which chemical element gets its name from the Greek word meaning 'stranger'?",
+    "o1":"Flerovium",
+    "o2":"Xenon",
+    "o3":"Krypton",
+    "o4":"Ytterbium",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
+     "question":"What kind of bird is the Jabiru?",
+    "o1":"Cormorant",
+    "o2":"Flamingo",
+    "o3":"Crane",
+    "o4":"Stork",
+    "ca":4
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"In 1851, the first telegraph line was opened in which Indian city?",
+    "o1":"Bombay",
+    "o2":"Madras",
+    "o3":"Calcutta",
+    "o4":"Surat",
+    "ca":3
+},
+{
+     "question":"Which festival means 'boiling over' in its native language?",
+    "o1":"Onam",
+    "o2":"Pongal",
+    "o3":"Bihu",
+    "o4":"Baisakhi",
     "ca":2
 },
 {
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+    "question":"Which tree is known as 'Limba' in Gujarat?",
+    "o1":"Neem",
+    "o2":"Peepal",
+    "o3":"Banyan",
+    "o4":"Coconut",
     "ca":1
 },
 {
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
+     "question":"In which Indian state is the Thyagaraja Music Festival celebrated?",
+    "o1":"Karnataka",
+    "o2":"Andhra Pradesh",
+    "o3":"Kerala",
+    "o4":"Tamil Nadu",
+    "ca":4
+},
+{
+    "question":"Which Indian state's name literally means 'the abode of God'",
+    "o1":"Kerala",
+    "o2":"Haryana",
+    "o3":"Odisha",
+    "o4":"Uttarakhand",
     "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
-},
-{
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
-},
-{
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
-},
-{
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
-},
-{
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
-},
-{
-     "question":"Who are you  again?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":2
-},
-{
-    "question":"Who are you?",
-    "o1":"A",
-    "o2":"B",
-    "o3":"C",
-    "o4":"D",
-    "ff":[2,4],
-    "ap":[10,20,30,40],
-    "ca":1
 },
 {
      "question":"Who are you  again?",
@@ -1301,5 +1243,178 @@
     "ff":[2,4],
     "ap":[10,20,30,40],
     "ca":2
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
+},
+{
+    "question":"Who are you?",
+    "o1":"A",
+    "o2":"B",
+    "o3":"C",
+    "o4":"D",
+    "ff":[2,4],
+    "ap":[10,20,30,40],
+    "ca":1
 }
+
+
+
 ]

@@ -149,7 +149,7 @@ $(document).ready(function(){
         $("#apr").css("visibility","hidden");
     }
     function play(){
-        if(currentq<16){
+        if(currentq<16 && currentq!=0){
 
             isclicked=0;
             if(ff2==0){
@@ -313,12 +313,13 @@ $(document).ready(function(){
         else if(data=="win"){
             currentq=0;
             display();
+            moneywon=$("#p15").attr("data-value");
           /*  $("#ll, #ll > span").css("visibility","hidden");
             $("#monlist, #monlist > div").css("visibility","hidden");*/
       /*      $("#ansmess").html("Congratulations! You have won &#8377; 7 crores! You win the game!");
             $("#ansmess").css("color","green").addClass("alert alert-success").css("visibility","visible");
             $.post("leaderboard/",{ "name":username,"score":moneywon,"sorts":"70000000", "timestamp":getDateTime() });*/
-            var resultObj={ "name":username,"score":moneywon,"sorts":sendmoneytoserver, "timestamp":getDateTime() };
+            var resultObj={ "name":username,"score":moneywon,"sorts":70000000, "timestamp":getDateTime() };
             sessionStorage.value=JSON.stringify(resultObj);
             location.href="result.html";
         }
