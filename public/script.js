@@ -122,7 +122,7 @@ $(document).ready(function(){
         }
         else if(isans==0){
             for(var i=1;i<=4;i++){
-                    $("#o" + i).css("color", "#000000").css("visibility", "visible");
+                    $("#o" + i).css("color", "#66ffff").css("visibility", "visible");
             }
         }
         else
@@ -133,7 +133,7 @@ $(document).ready(function(){
                 }
                 else
                 {
-                    $("#o" + i).css("color", "#000000").css("visibility", "visible");
+                    $("#o" + i).css("color", "#66ffff").css("visibility", "visible");
                 }
 
             }
