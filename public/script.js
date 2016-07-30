@@ -173,24 +173,81 @@ $(document).ready(function(){
        }
        fiftyf=0;
        ff2=0;
+       $("#ff").prop('disabled', true);
     });
     $("#ap").click(function(){
-       var aparray = questionarray[questionnumber-1]["ap"];
+       var correctans = questionarray[questionnumber-1]["ca"];
+       console.log(correctans);
+       var aparray = [];
+       var seed=Math.floor(Math.random()*10);
+       if(currentq<=4){
+         if(seed>=8){
+           aparray[correctans-1]=30+Math.floor(Math.random()*30);
+         }
+         else {
+           aparray[correctans-1]=50+Math.floor(Math.random()*50);
+         }
+
+       }
+       else if(currentq<=8){
+         if(seed>=6){
+           aparray[correctans-1]=20+Math.floor(Math.random()*36);
+         }
+         else{
+           aparray[correctans-1]=40+Math.floor(Math.random()*40);
+         }
+       }
+       else{
+         if(seed>=5){
+           aparray[correctans-1]=Math.floor(Math.random()*50);
+         }
+         else{
+           aparray[correctans-1]=20+Math.floor(Math.random()*40);
+         }
+       }
+       var remainingPercentage = 100-aparray[correctans-1];
+       var tempPercentage;
+       for(var i=0;i<4;i++){
+         if(i!=(correctans-1)){
+           do{
+             tempPercentage = Math.floor(Math.random()*100);
+           }while(tempPercentage>remainingPercentage);
+           remainingPercentage-=tempPercentage;
+           aparray[i]=tempPercentage;
+
+
+         }
+       }
        $("#apr").css("visibility","visible");
        for(var i=1;i<=4;i++){
-           $("#ao" + i).html(i+": "+aparray[i-1]+"%");
+           $("#ao" + i).css("width",aparray[i-1]+"%");
+           $("#ao" + i).html(aparray[i-1]+"%");
        }
        audiencep=0;
        ap2=0;
+       $("#ap").prop('disabled', true);
     });
     $("#fl").click(function(){
         flipq=0;
         fl2=0;
         displaymessage("enterguess");
+        $("#fl").prop('disabled', true);
+        $("#ap").prop('disabled', true);
+        $("#ff").prop('disabled', true);
+        $("#ff").prop('disabled', true);
+        $("#quit").prop('disabled', true);
     });
     $("#quit").click(function(){
         quit=0;
+        fiftyf=0;
+        audiencep=0;
+        flipq=0;
         displaymessage("enterguess");
+        $("#ff").prop('disabled', true);
+        $("#fl").prop('disabled', true);
+        $("#ap").prop('disabled', true);
+        $("#quit").prop('disabled', true);
+
     });
     function displaymessage(data)
     {
@@ -252,7 +309,7 @@ $(document).ready(function(){
             $("#ansmess").html("That would have been the incorrect answer!").css("color","red").addClass("alert alert-danger").css("visibility","visible");
         }
         else if(data=="enterguess"){
-            $("#ansmess").html("Please guess an answer").css("color","yellow").addClass("alert alert-info").css("visibility","visible");
+            $("#ansmess").html("Please guess an answer").css("color","blue").addClass("alert alert-info").css("visibility","visible");
         }
     }
     $("#o1,#o2,#o3,#o4").click(function(){
