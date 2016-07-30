@@ -9,7 +9,7 @@ $(document).ready(function(){
     var hide = [];
     var ffstatus = 0;
 
-    $.get("data.json", function(data){
+    $.get("../data/data.json", function(data){
 
         questionarray = data;
         init();
