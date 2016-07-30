@@ -6,6 +6,8 @@ $(document).ready(function(){
     var isans=0,chosenans=0;
     var isclicked=1;
     var questionnumber;
+    var hide = [];
+    var ffstatus = 0;
 
     $.get("data.json", function(data){
 
@@ -115,6 +117,11 @@ $(document).ready(function(){
             $("#pp").css("visibility", "hidden");
         }*/
         $("#quit").prop('disabled', false);
+        if(ff2==0 && ffstatus==1){
+          $("#o" + hide[0]).css("visibility", "hidden");
+          $("#o" + hide[1]).css("visibility", "hidden");
+          ffstatus=0;
+        }
         if(currentq==0){
             for(var i=1;i<=4;i++){
                     $("#o" + i).css("visibility", "hidden");
@@ -167,13 +174,26 @@ $(document).ready(function(){
         }
     }
     $("#ff").click(function(){
-       var ffarray = questionarray[questionnumber-1]["ff"];
-       for(var i=0;i<2;i++){
-           $("#o" + ffarray[i]).css("visibility","hidden");
+
+       var count = 0;
+       var correctans = questionarray[questionnumber-1]["ca"];
+       var otherOption;
+       do{
+         otherOption = 1+Math.floor(Math.random()*4);
+       }while(otherOption==correctans);
+       for(var i=0;i<4;i++){
+            if(i!=(correctans-1) && i!=(otherOption-1)){
+              $("#o" + (i+1)).css("visibility","hidden");
+              hide[count++] = i+1;
+            }
+
        }
        fiftyf=0;
        ff2=0;
+       ffstatus=1;
        $("#ff").prop('disabled', true);
+       $("#ap").prop('disabled', true);
+       $("#fl").prop('disabled', true);
     });
     $("#ap").click(function(){
        var correctans = questionarray[questionnumber-1]["ca"];
