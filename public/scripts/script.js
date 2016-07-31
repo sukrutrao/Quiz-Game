@@ -365,14 +365,18 @@ $(document).ready(function(){
                       currop.css("color","green");
                       displaymessage("correct");
                 },1000);
-                setTimeout(function(){
-                    currentq++;
+                if(currentq<16){
+                  setTimeout(function(){
+                      currentq++;
+                      isans=0;
+                      display();
+                      play();
+                  },2000);
+                }
+                else{
+                  play();
+                }
 
-                    isans=0;
-                    if(currentq<16)
-                    display();
-                    play();
-                },2000);
             }
             else
             {
