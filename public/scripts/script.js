@@ -7,6 +7,7 @@ $(document).ready(function(){
     var isclicked=1;
     var questionnumber;
     var hide = [];
+    var usedQuestions = [];
     var ffstatus = 0;
 
     $.get("../data/data.json", function(data){
@@ -15,7 +16,14 @@ $(document).ready(function(){
         init();
 
     });
-
+    function isUsed(questionnum){
+      for(var i=0;i<usedQuestions.length;i++){
+        if(questionnum == usedQuestions[i]){
+          return 1;
+        }
+      }
+      return 0;
+    }
     function getDateTime() {
 
     var date = new Date();
@@ -152,12 +160,16 @@ $(document).ready(function(){
         if(currentq<16 && currentq!=0){
 
             isclicked=0;
-            if(ff2==0){
-                questionnumber=(currentq-1)*10+Math.floor(Math.random()*5)+5;
+        /*    if(ff2==0){
+                questionnumber=(currentq-1)*2+Math.floor(Math.random()*5)+5;
             }
             else{
                 questionnumber=(currentq-1)*10+Math.floor(Math.random()*5);
-            }
+            }*/
+            do{
+              questionnumber = 1 + Math.floor(Math.random()*43);
+            }while(isUsed(questionnumber)==1);
+            usedQuestions[currentq-1] = questionnumber;
             ff2=1;
             ap2=1;
             dd2=1;
@@ -227,12 +239,19 @@ $(document).ready(function(){
        }
        var remainingPercentage = 100-aparray[correctans-1];
        var tempPercentage;
+       var countdone=0;
        for(var i=0;i<4;i++){
          if(i!=(correctans-1)){
+           if(countdone == 2){
+             tempPercentage = remainingPercentage;
+             aparray[i]=tempPercentage;
+             break;
+           }
            do{
              tempPercentage = Math.floor(Math.random()*100);
            }while(tempPercentage>remainingPercentage);
            remainingPercentage-=tempPercentage;
+           countdone++;
            aparray[i]=tempPercentage;
 
 
@@ -348,7 +367,9 @@ $(document).ready(function(){
                 },1000);
                 setTimeout(function(){
                     currentq++;
+
                     isans=0;
+                    if(currentq<16)
                     display();
                     play();
                 },2000);
@@ -387,6 +408,7 @@ $(document).ready(function(){
             setTimeout(function(){
 
                 isans=0;
+
                 display();
                 play();
             },2000);
